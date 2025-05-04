@@ -55,10 +55,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sa3qd"]
-radius = 5.0
-height = 18.0
+radius = 4.0
+height = 14.0
 
 [node name="Cow" type="CharacterBody2D"]
+collision_layer = 64
 script = ExtResource("1_j7g5r")
 metadata/_custom_type_script = "uid://c48w48smlpsjp"
 
@@ -69,15 +70,18 @@ animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, -5)
+y_sort_enabled = true
+position = Vector2(-2, -5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_sa3qd")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 navigation_layers = 2
+path_postprocessing = 1
 avoidance_enabled = true
 radius = 5.0
 avoidance_layers = 2
+debug_enabled = true
 
 [node name="StateMachine" type="Node2D" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_14ngq")
