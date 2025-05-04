@@ -20,8 +20,7 @@ window/size/viewport_width=625
 window/size/viewport_height=375
 window/size/window_width_override=2500
 window/size/window_height_override=1500
-window/stretch/mode="viewport"
-window/stretch/aspect="keep_height"
+window/stretch/mode="canvas_items"
 window/stretch/scale=1.66
 window/stretch/scale_mode="integer"
 
@@ -71,7 +70,9 @@ hit={
 2d_render/layer_1="Ground"
 2d_render/layer_2="Player"
 2d_physics/layer_1="Ground"
+2d_navigation/layer_1="Chicken Navigation"
 2d_physics/layer_2="Player"
+2d_navigation/layer_2="Cow Navigation"
 2d_physics/layer_3="Interactable"
 2d_physics/layer_4="Tools"
 2d_physics/layer_5="Object"
@@ -80,3 +81,4 @@ hit={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
