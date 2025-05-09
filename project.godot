@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Sprout Lands"
+config/name="Furry-farming-game"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -18,11 +18,13 @@ config/icon="res://icon.svg"
 
 ToolManager="*res://scripts/globals/tool_manager.gd"
 InventoryManager="*res://scripts/globals/inventory_manager.gd"
+DayAndNightCycleManager="*res://scripts/globals/day_and_night_cycle_manager.gd"
 
 [display]
 
-window/size/viewport_width=625
-window/size/viewport_height=375
+window/size/viewport_width=640
+window/size/viewport_height=390
+window/size/mode=3
 window/size/window_width_override=2500
 window/size/window_height_override=1500
 window/stretch/mode="canvas_items"
