@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dfvcy1kcsn1fh"]
+
+[sub_resource type="GDScript" id="GDScript_lflmu"]
+script/source = "class_name SaveDataComponent
+extends NodeS
+"
+
+[resource]
+script = SubResource("GDScript_lflmu")
