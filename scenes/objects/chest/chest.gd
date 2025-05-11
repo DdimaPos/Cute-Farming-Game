@@ -9,6 +9,8 @@ var tomato_harvest_scene = preload("res://scenes/objects/plants/tomato_harvest.t
 @export var food_drop_height: int = 40
 @export var reward_output_radius: int = 10
 @export var output_reward_scenes: Array[PackedScene] = []
+@export var accepted_food: Array[String] = []
+
 
 @onready var interactable_component: InteractableComponent = $InteractableComponent
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
@@ -52,17 +54,23 @@ func _unhandled_input(event: InputEvent) -> void:
 			balloon.start(load("res://dialogue/conversations/chest.dialogue"), dialogue_start_command)
 
 func on_feed_the_animals() -> void:
-	if in_range:
-		is_chest_feeding = true
-		await trigger_feed_harvest("corn", corn_harvest_scene)
-		await trigger_feed_harvest("tomato", tomato_harvest_scene)
-		is_chest_feeding = false
-		
-		# Manually close the chest after feeding
-		if is_chest_open:
-			await get_tree().create_timer(1.0).timeout
-			animated_sprite_2d.play("chest_close")
-			is_chest_open = false
+	is_chest_feeding = true  # Start feeding
+	for index in accepted_food:
+		if in_range:
+			# Trigger appropriate harvest based on the food item
+			if index == "corn":
+				await trigger_feed_harvest("corn", corn_harvest_scene)
+			else:
+				await trigger_feed_harvest("tomato", tomato_harvest_scene)
+
+	# Close the chest animation only after all feedings are done
+	if is_chest_open:
+		await get_tree().create_timer(1.0).timeout
+		animated_sprite_2d.play("chest_close")
+		is_chest_open = false
+	
+	is_chest_feeding = false  # End feeding
+
 
 func trigger_feed_harvest(inventory_item: String, scene: Resource) -> void:
 	var inventory: Dictionary = InventoryManager.inventory
