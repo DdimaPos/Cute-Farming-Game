@@ -1,0 +1,13 @@
+~ start
+
+Ciort: [[Hiii|Hello, faggot|Howdy]], nice to meet you!
+Ciort: Welcome to your new farm!
+Ciort: As you can see the chicken and cows are hungry.
+Ciort: You need to grow some crops to feed them.
+Ciort: Here are some seeds and tools to grow some crops.
+- Take crop seeds
+	Beemo: Yeah I can grow crops.
+	do GameDialogueManager.action_give_crop_seeds()
+- No, I don't want them!
+	Beemo: Stranger Danger! I'm not ready to grow my farm yet!
+=> END

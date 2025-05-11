@@ -1,0 +1,23 @@
+~ start_cow_pasture_box
+
+Pasture Box: [[Hello|Hi]], your cows are hungry!
+Pasture Box: Would you like to feed your cows?
+- Feed the cows
+	Beemo: Yeah I want to feed them.
+	do GameDialogueManager.action_feed_animals()
+- Don't feed the cows
+	Beemo: No I won't feed them. I have enough milk.
+
+=> END
+
+~ start_chicken_pasture_box
+
+Pasture Box: [[Hello|Hi]], your chickens are hungry!
+Pasture Box: Would you like to feed your chickens?
+- Feed the chickens
+	Beemo: Yeah I want to feed them.
+	do GameDialogueManager.action_feed_animals()
+- Don't feed the chickens
+	Beemo: No I won't feed them. I have enough eggs.
+
+=> END
