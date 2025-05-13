@@ -59,6 +59,7 @@ radius = 4.0
 height = 14.0
 
 [node name="Cow" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 64
 script = ExtResource("1_j7g5r")
 metadata/_custom_type_script = "uid://c48w48smlpsjp"
@@ -81,7 +82,6 @@ path_postprocessing = 1
 avoidance_enabled = true
 radius = 5.0
 avoidance_layers = 2
-debug_enabled = true
 
 [node name="StateMachine" type="Node2D" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_14ngq")

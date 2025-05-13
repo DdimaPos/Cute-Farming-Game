@@ -84,9 +84,11 @@ position = Vector2(306, 215)
 position = Vector2(286, 245)
 
 [node name="Chicken548" parent="Chickens" instance=ExtResource("2_a4sac")]
+visible = false
 position = Vector2(221, 175)
 
 [node name="Chicken551" parent="Chickens" instance=ExtResource("2_a4sac")]
+visible = false
 position = Vector2(253, 135)
 
 [node name="Chicken552" parent="Chickens" instance=ExtResource("2_a4sac")]
