@@ -16,6 +16,7 @@ var cell_source_id: int
 var local_cell_position: Vector2
 var distance: float
 
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("remove_dirt"):
 		if ToolManager.selected_tool == DataTypes.Tools.TillGround:
