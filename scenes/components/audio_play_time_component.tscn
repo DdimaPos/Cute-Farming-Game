@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c83atutma8ktt"]
+
+[ext_resource type="Script" uid="uid://bcax6rd2d86ck" path="res://scenes/components/audio_play_time_component.gd" id="1_3pw5c"]
+
+[node name="AudioPlayTimeComponent" type="Timer"]
+script = ExtResource("1_3pw5c")

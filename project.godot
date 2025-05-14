@@ -50,6 +50,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 folder_colors={
 "res://Tilesets/": "yellow",
 "res://assets/": "orange",
+"res://audio/": "red",
 "res://resources/": "purple",
 "res://scenes/": "green",
 "res://scripts/": "pink"
