@@ -49,7 +49,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		is_chest_open = true
 
 		var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
-		get_tree().current_scene.add_child(balloon)
+		get_tree().root.add_child(balloon)
 		balloon.start(load("res://dialogue/conversations/magic_chest.dialogue"), "start_magic")
 
 func on_exchange_items(give_item: String, give_amount: int, reward_item: String, reward_amount: int) -> void:
