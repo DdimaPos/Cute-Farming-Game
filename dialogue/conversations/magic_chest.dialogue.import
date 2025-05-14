@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bogcm2b4afn3o"
+path="res://.godot/imported/magic_chest.dialogue-0ea3d31ee1afbbc7a2942c4303644000.tres"
+
+[deps]
+
+source_file="res://dialogue/conversations/magic_chest.dialogue"
+dest_files=["res://.godot/imported/magic_chest.dialogue-0ea3d31ee1afbbc7a2942c4303644000.tres"]
+
+[params]
+
+defaults=true
