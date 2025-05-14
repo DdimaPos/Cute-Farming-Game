@@ -47,6 +47,7 @@ text = "START"
 [node name="SaveGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 29)
 layout_mode = 2
+theme = ExtResource("2_l5nq4")
 theme_type_variation = &"GameMenuButton"
 text = "SAVE"
 
