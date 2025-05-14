@@ -180,4 +180,4 @@ output_reward_scenes = Array[PackedScene]([ExtResource("14_iwr0g")])
 accepted_food = Array[String](["corn"])
 
 [node name="MagicChest" parent="." instance=ExtResource("18_np2pn")]
-position = Vector2(105, 142)
+position = Vector2(-23, 10)
