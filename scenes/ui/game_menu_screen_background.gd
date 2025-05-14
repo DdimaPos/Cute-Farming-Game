@@ -5,3 +5,4 @@ func _ready() -> void:
 	
 func set_scene_process_mode() -> void:
 	process_mode = PROCESS_MODE_DISABLED
+ 

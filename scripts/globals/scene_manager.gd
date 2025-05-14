@@ -3,7 +3,7 @@ extends Node
 var main_scene_path: String = "res://scenes/main_scene.tscn"
 var main_scene_level_root_path: String = "/root/MainScene/GameRoot/LevelRoot"
 
-var level_scenes: Dictionary = {
+var level_scenes : Dictionary = {
 	"Level1" : "res://scenes/levels/level_1.tscn"
 }
 
