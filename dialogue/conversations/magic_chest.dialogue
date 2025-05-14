@@ -1,0 +1,38 @@
+~ start_magic
+Beemo: This seems to be a magic chest!
+Beemo: Maybe I can exchange resources here...
+- 1 Tomato → 2 Log
+	do GameDialogueManager.action_exchange_items("tomato", 1, "log", 2)
+	=> restart_magic
+- 2 Corn → 3 Stone
+	do GameDialogueManager.action_exchange_items("corn", 2, "stone", 3)
+	=> restart_magic
+- 3 Egg → 3 Milk
+	do GameDialogueManager.action_exchange_items("egg", 3, "milk", 3)
+	=> restart_magic
+- 4 Stone → 2 Log
+	do GameDialogueManager.action_exchange_items("stone", 4, "log", 2)
+	=> restart_magic
+- Maybe not...
+	Beemo: Maybe I shouldn't believe in eldritch magic.
+	=> END
+=> END
+
+~ restart_magic
+Beemo: I want to exchange more!
+- 1 Tomato → 2 Log
+	do GameDialogueManager.action_exchange_items("tomato", 1, "log", 2)
+	=> restart_magic
+- 2 Corn → 3 Stone
+	do GameDialogueManager.action_exchange_items("corn", 2, "stone", 3)
+	=> restart_magic
+- 3 Egg → 3 Milk
+	do GameDialogueManager.action_exchange_items("egg", 3, "milk", 3)
+	=> restart_magic
+- 4 Stone → 2 Log
+	do GameDialogueManager.action_exchange_items("stone", 4, "log", 2)
+	=> restart_magic
+- Maybe not...
+	Beemo: Maybe I shouldn't trust eldritch magic so much...
+	=> END
+=> END
