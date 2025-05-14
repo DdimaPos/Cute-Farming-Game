@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dm6f8nqb0sb6y" path="res://scenes/characters/cow/cow.tscn" id="4_3aka8"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_jtmit"]
-vertices = PackedVector2Array(339.5, 202, 339.5, 77.7812, 348.828, 78.8203, 402.18, 96.6016, 379.289, 194.57, 344.5, 313.039, 193.922, 313.938, 193.133, 214, 227, 214, 227, 182, 195.5, 182, 195.5, 150, 243, 150, 243, 118, 195.5, 118, 195.5, 86, 314.5, 86, 314.5, 118, 266, 118, 266, 150, 250, 182, 314.5, 150, 314.5, 182, 250, 214, 339, 214, 339, 202)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 8, 5), PackedInt32Array(9, 10, 11, 12), PackedInt32Array(13, 14, 15, 16), PackedInt32Array(16, 17, 18), PackedInt32Array(13, 16, 18), PackedInt32Array(12, 13, 18, 19, 20), PackedInt32Array(19, 21, 22, 20), PackedInt32Array(8, 9, 12, 20, 23), PackedInt32Array(5, 8, 23), PackedInt32Array(5, 23, 24), PackedInt32Array(0, 5, 24, 25)])
+vertices = PackedVector2Array(339.5, 202, 339.5, 77.7812, 348.828, 78.8203, 402.18, 96.6016, 379.289, 194.57, 344.5, 313.039, 194.273, 313.93, 196.969, 214, 227, 214, 227, 182, 197.828, 182, 198.688, 150, 243, 150, 195.5, 103.93, 195.5, 86, 314.5, 86, 314.5, 118, 266, 118, 266, 150, 314.5, 150, 314.5, 182, 250, 182, 339, 214, 339, 202, 250, 214, 243, 118, 196.969, 118)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(5, 6, 7, 8), PackedInt32Array(9, 10, 11, 12), PackedInt32Array(13, 14, 15, 16, 17), PackedInt32Array(18, 19, 20, 21), PackedInt32Array(22, 23, 0, 5), PackedInt32Array(24, 22, 5), PackedInt32Array(24, 5, 8), PackedInt32Array(21, 24, 8, 9, 12), PackedInt32Array(18, 21, 12, 25, 17), PackedInt32Array(13, 17, 25), PackedInt32Array(13, 25, 26)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(182, 71, 189, 138, 184, 324, 352, 323, 389, 197, 414, 90, 351, 69, 324, 66)])
 source_geometry_mode = 2
 
@@ -68,23 +68,19 @@ position = Vector2(279, 250)
 [node name="Cows" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Cows"]
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Cows" groups=["navigation_polygon_source_geometry_group"]]
 position = Vector2(6, 3)
 navigation_polygon = SubResource("NavigationPolygon_i04cp")
 navigation_layers = 2
 
 [node name="Cow" parent="Cows" instance=ExtResource("4_3aka8")]
-y_sort_enabled = true
 position = Vector2(477, 147)
 
 [node name="Cow4" parent="Cows" instance=ExtResource("4_3aka8")]
-y_sort_enabled = true
 position = Vector2(454, 207)
 
 [node name="Cow2" parent="Cows" instance=ExtResource("4_3aka8")]
-y_sort_enabled = true
 position = Vector2(518, 275)
 
 [node name="Cow3" parent="Cows" instance=ExtResource("4_3aka8")]
-y_sort_enabled = true
 position = Vector2(482, 273)
